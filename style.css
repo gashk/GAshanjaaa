@@ -1,311 +1,218 @@
-/* ==========================
-   Base & Typography
-========================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weaver: Marketing Reinvented for the AI Age</title>
+    <meta name="description" content="Launch campaigns faster, track live performance, and adapt with smart AI insights — all in one sleek dashboard.">    
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f9fafc;
-    color: #333;
-    line-height: 1.6;
-}
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features for Modern Marketing</h2>
+                <p class="section-subtitle">Everything you need to scale your marketing efforts with AI-powered intelligence</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI Strategy Builder</h3>
+                    <p>Recommends modern campaign tactics based on your goals, audience, and market trends.</p>
+                    <ul class="feature-list">
+                        <li>Goal-based recommendations</li>
+                        <li>Market trend analysis</li>
+                        <li>Audience targeting insights</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Live Campaign Dashboard</h3>
+                    <p>Real-time tracking and analytics for instant data-driven decisions.</p>
+                    <ul class="feature-list">
+                        <li>Real-time performance metrics</li>
+                        <li>Custom reporting</li>
+                        <li>ROI tracking</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon"><i class="fas fa-credit-card"></i></div>
+                    <h3>Integrated Payments</h3>
+                    <p>Stripe and Flutterwave integration for global payment processing.</p>
+                    <ul class="feature-list">
+                        <li>Multi-currency support</li>
+                        <li>Secure payment processing</li>
+                        <li>Automated billing</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon"><i class="fas fa-flask"></i></div>
+                    <h3>Conversion Optimization</h3>
+                    <p>A/B testing, heatmaps, and behavioral analysis tools to boost conversions.</p>
+                    <ul class="feature-list">
+                        <li>A/B testing suite</li>
+                        <li>Heatmap analysis</li>
+                        <li>User behavior tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
+    <!-- Insights Section -->
+    <section id="insights" class="insights">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Marketing Trends & Insights</h2>
+                <p class="section-subtitle">Stay ahead of the curve with data-driven insights and strategies</p>
+            </div>
+            
+            <div class="insights-grid">
+                <article class="insight-card" data-aos="fade-up">
+                    <div class="insight-image"><i class="fas fa-robot"></i></div>
+                    <div class="insight-content">
+                        <h3>The AI Revolution in Digital Advertising</h3>
+                        <p>63% of mobile users are more likely to buy from sites that personalize information to their location.</p>
+                        <div class="insight-stats">
+                            <span class="stat-badge">63%</span>
+                            <span class="stat-text">Higher conversion with location-based personalization</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="insight-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="insight-image"><i class="fas fa-users"></i></div>
+                    <div class="insight-content">
+                        <h3>User-Generated Content: The New Marketing Gold</h3>
+                        <p>Consumers trust peer recommendations 92% more than traditional advertising.</p>
+                        <div class="insight-stats">
+                            <span class="stat-badge">92%</span>
+                            <span class="stat-text">Trust peer recommendations over ads</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="insight-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="insight-image"><i class="fas fa-bullseye"></i></div>
+                    <div class="insight-content">
+                        <h3>Behavioral Segmentation: Beyond Demographics</h3>
+                        <p>Companies using behavioral data see 3x higher conversion rates than those using demographics alone.</p>
+                        <div class="insight-stats">
+                            <span class="stat-badge">3x</span>
+                            <span class="stat-text">Higher conversion with behavioral targeting</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-h2.section-title {
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 0.5rem;
-    color: #1e2a38;
-}
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trusted by Marketing Leaders</h2>
+                <p class="section-subtitle">See what industry experts say about Weaver</p>
+            </div>
+            
+            <div class="testimonials-carousel" id="testimonials-carousel">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"Weaver transformed our marketing operations. AI insights helped us increase our conversion rate by 40% in just three months."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Sarah Chen</h4>
+                            <span>CMO, TechFlow Inc.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The real-time dashboard and automated optimization features have saved us countless hours."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Marcus Rodriguez</h4>
+                            <span>Marketing Director, GrowthCo</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a startup, we needed enterprise-level marketing tools without the enterprise price tag. Weaver delivered exactly that."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Emily Watson</h4>
+                            <span>Founder, StartupXYZ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
 
-p.section-subtitle {
-    font-size: 1rem;
-    color: #6b7c93;
-    text-align: center;
-    margin-bottom: 2.5rem;
-}
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready to Transform Your Marketing?</h2>
+                    <p>Join thousands of marketers who are already using Weaver to scale their campaigns.</p>
+                    <div class="contact-features">
+                        <div class="contact-feature"><i class="fas fa-rocket"></i><span>Start your free trial today</span></div>
+                        <div class="contact-feature"><i class="fas fa-clock"></i><span>No credit card required</span></div>
+                        <div class="contact-feature"><i class="fas fa-headset"></i><span>24/7 support available</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-/* ==========================
-   Features
-========================== */
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
-}
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">Weaver</div>
+                    <p>Marketing reinvented for the AI age. Empowering teams with data-first tools.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Weaver. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-.feature-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-}
-
-.feature-icon {
-    font-size: 2.5rem;
-    color: #4e9fff;
-    margin-bottom: 1rem;
-}
-
-.feature-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.8rem;
-    color: #1e2a38;
-}
-
-.feature-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
-    color: #6b7c93;
-}
-
-.feature-list li {
-    margin: 0.4rem 0;
-}
-
-/* ==========================
-   Insights
-========================== */
-.insights-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.insight-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-}
-
-.insight-card:hover {
-    transform: translateY(-5px);
-}
-
-.insight-image {
-    font-size: 3rem;
-    padding: 1.5rem;
-    background: linear-gradient(90deg, #4e9fff, #7cc6ff);
-    color: white;
-    text-align: center;
-}
-
-.insight-content {
-    padding: 1.5rem;
-}
-
-.insight-content h3 {
-    font-size: 1.25rem;
-    color: #1e2a38;
-    margin-bottom: 0.8rem;
-}
-
-.insight-content p {
-    font-size: 0.95rem;
-    color: #6b7c93;
-    margin-bottom: 1rem;
-}
-
-.insight-stats {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.stat-badge {
-    background: #4e9fff;
-    color: white;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border-radius: 30px;
-    margin-right: 0.8rem;
-}
-
-.stat-text {
-    font-size: 0.9rem;
-    color: #333;
-}
-
-/* ==========================
-   Testimonials
-========================== */
-.testimonials-carousel {
-    display: flex;
-    gap: 2rem;
-    overflow-x: auto;
-    padding: 1rem 0;
-    scroll-snap-type: x mandatory;
-}
-
-.testimonial-card {
-    flex: 0 0 300px;
-    background: white;
-    border-radius: 15px;
-    padding: 2rem;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-    scroll-snap-align: center;
-}
-
-.testimonial-content p {
-    font-style: italic;
-    color: #6b7c93;
-    margin-bottom: 1.2rem;
-}
-
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-.author-avatar {
-    font-size: 1.8rem;
-    background: #4e9fff;
-    color: white;
-    border-radius: 50%;
-    padding: 0.6rem;
-}
-
-.author-info h4 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #1e2a38;
-}
-
-.author-info span {
-    font-size: 0.85rem;
-    color: #6b7c93;
-}
-
-/* Carousel dots */
-.carousel-dots {
-    text-align: center;
-    margin-top: 1.5rem;
-}
-
-.dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background: #ccc;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.dot.active {
-    background: #4e9fff;
-}
-
-/* ==========================
-   Contact
-========================== */
-.contact {
-    background: linear-gradient(90deg, #4e9fff, #7cc6ff);
-    color: white;
-    padding: 3rem 0;
-}
-
-.contact-info h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.contact-features {
-    margin-top: 1.5rem;
-}
-
-.contact-feature {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    margin-bottom: 0.8rem;
-    font-size: 0.95rem;
-}
-
-.contact-feature i {
-    font-size: 1.2rem;
-}
-
-/* ==========================
-   Footer
-========================== */
-.footer {
-    background: #1e2a38;
-    color: white;
-    padding: 2rem 0;
-}
-
-.footer-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.footer p {
-    color: #bbb;
-    font-size: 0.9rem;
-}
-
-.social-links a {
-    color: white;
-    margin-right: 1rem;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: #4e9fff;
-}
-
-.footer-bottom {
-    margin-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 1rem;
-    font-size: 0.85rem;
-    text-align: center;
-    color: #bbb;
-}
-
-/* ==========================
-   Responsive
-========================== */
-@media (max-width: 768px) {
-    .features-grid,
-    .insights-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .testimonials-carousel {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .testimonial-card {
-        flex: none;
-        width: 100%;
-    }
-}
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
