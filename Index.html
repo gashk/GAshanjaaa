@@ -3,26 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weaver</title>
-    <link rel="stylesheet" href="style.css">
+    <title>500: Marketing Reinvented for the AI Age</title>
+    <meta name="description" content="Launch campaigns faster, track live performance, and adapt with smart AI insights — all in one sleek dashboard.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Weaver Marketing</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="blog.html">Blog</a>
-        </nav>
-    </header>
 
-    <section>
-        <h2>Grow Your Brand</h2>
-        <p>We help businesses increase visibility, engagement, and conversions through strategic marketing campaigns.</p>
-        <a href="blog.html" class="btn">Read My Blog</a>
-    </section>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="index.html">500</a>
+        </div>
+        
+        <div class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
 
-    <footer>
-        <p>© 2025 My Marketing Gig</p>
-    </footer>
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-background">
+        <div class="gradient-overlay"></div>
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">500:</span> Marketing Reinvented for the AI Age
+            </h1>
+            <p class="hero-subtitle">
+                Launch campaigns faster, track live performance, and adapt with smart AI insights — all in one sleek dashboard.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="cta-button primary">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="features">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Powerful Features for Modern Marketing</h2>
+            <p class="section-subtitle">Everything you need to scale your marketing efforts with AI-powered intelligence</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>AI Strategy Builder</h3>
+                <p>Recommends modern campaign tactics based on your goals, audience, and market trends.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Live Campaign Dashboard</h3>
+                <p>Real-time tracking and analytics to make data-driven decisions instantly.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3>Conversion Optimization</h3>
+                <p>A/B testing and behavioral analysis tools to maximize your conversion rates.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Insights Section -->
+<section id="insights" class="insights">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Marketing Trends & Insights</h2>
+            <p class="section-subtitle">Stay ahead of the curve with data-driven insights</p>
+        </div>
+        
+        <div class="insights-grid">
+            <article class="insight-card">
+                <h3>The AI Revolution in Digital Advertising</h3>
+                <p>AI-powered personalization is now essential for survival in today's competitive landscape.</p>
+            </article>
+            
+            <article class="insight-card">
+                <h3>User-Generated Content</h3>
+                <p>Consumers trust peer recommendations more than traditional advertising. Leverage UGC for better engagement.</p>
+            </article>
+            
+            <article class="insight-card">
+                <h3>Behavioral Segmentation</h3>
+                <p>Move beyond demographics and target based on real behavior for higher conversions.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you. Fill out the form and we’ll get back to you shortly.</p>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="cta-button primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 500. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
+
