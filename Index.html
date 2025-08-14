@@ -3,13 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weaver: Marketing Reinvented for the AI Age</title>
-    <meta name="description" content="Launch campaigns faster, track live performance, and adapt with smart AI insights — all in one sleek dashboard.">    
-       
+    <title>500: Marketing Reinvented for the AI Age</title>
+    <meta name="description" content="Launch campaigns faster, track live performance, and adapt with smart AI insights — all in one sleek dashboard.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body>    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">500</a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="product.html" class="nav-link">Product</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-section">
+                            <h4>Product</h4>
+                            <a href="api.html">API</a>
+                            <a href="integrations.html">Integrations</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>Resources</h4>
+                            <a href="resources.html">Resources</a>
+                            <a href="insights.html">Insights</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="documentation.html">Documentation</a>
+                            <a href="support.html">Support</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>Company</h4>
+                            <a href="company.html">Company</a>
+                            <a href="about.html">About</a>
+                            <a href="careers.html">Careers</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="partners.html">Partners</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>Research</h4>
+                            <a href="market-research.html">Market Research</a>
+                            <a href="research-tools.html">Research Tools</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="login.html" class="nav-link">Login</a>
+                <a href="signup.html" class="nav-link">Sign Up</a>
+                <a href="start-trial.html" class="cta-button nav-cta">Start Free Trial</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav><!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">500:</span> Marketing Reinvented for the AI Age
+                </h1>
+                <p class="hero-subtitle">
+                    Launch campaigns faster, track live performance, and adapt with smart AI insights — all in one sleek dashboard.
+                </p>
+                <div class="hero-cta">
+                    <a href="start-trial.html" class="cta-button primary">Start Free Trial</a>
+                    <button class="cta-button secondary">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">Active Campaigns</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">AI Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Features Section -->
     <section id="features" class="features">
@@ -21,9 +119,11 @@
             
             <div class="features-grid">
                 <div class="feature-card" data-aos="fade-up">
-                    <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
                     <h3>AI Strategy Builder</h3>
-                    <p>Recommends modern campaign tactics based on your goals, audience, and market trends.</p>
+                    <p>Recommends modern campaign tactics based on your goals, audience, and market trends. Get personalized strategies that adapt to your business needs.</p>
                     <ul class="feature-list">
                         <li>Goal-based recommendations</li>
                         <li>Market trend analysis</li>
@@ -32,9 +132,11 @@
                 </div>
                 
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                     <h3>Live Campaign Dashboard</h3>
-                    <p>Real-time tracking and analytics for instant data-driven decisions.</p>
+                    <p>Real-time tracking and analytics that show you exactly how your campaigns are performing. Make data-driven decisions instantly.</p>
                     <ul class="feature-list">
                         <li>Real-time performance metrics</li>
                         <li>Custom reporting</li>
@@ -43,9 +145,11 @@
                 </div>
                 
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-icon"><i class="fas fa-credit-card"></i></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
                     <h3>Integrated Payments</h3>
-                    <p>Stripe and Flutterwave integration for global payment processing.</p>
+                    <p>Seamless Stripe and Flutterwave integration for global payment processing. Accept payments from anywhere in the world.</p>
                     <ul class="feature-list">
                         <li>Multi-currency support</li>
                         <li>Secure payment processing</li>
@@ -54,9 +158,11 @@
                 </div>
                 
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-icon"><i class="fas fa-flask"></i></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
                     <h3>Conversion Optimization</h3>
-                    <p>A/B testing, heatmaps, and behavioral analysis tools to boost conversions.</p>
+                    <p>A/B testing, heatmaps, and behavioral analysis tools to maximize your conversion rates and optimize user experience.</p>
                     <ul class="feature-list">
                         <li>A/B testing suite</li>
                         <li>Heatmap analysis</li>
@@ -77,10 +183,13 @@
             
             <div class="insights-grid">
                 <article class="insight-card" data-aos="fade-up">
-                    <div class="insight-image"><i class="fas fa-robot"></i></div>
+                    <div class="insight-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
                     <div class="insight-content">
                         <h3>The AI Revolution in Digital Advertising</h3>
-                        <p>63% of mobile users are more likely to buy from sites that personalize information to their location.</p>
+                        <p>According to Google, 63% of mobile users are more likely to buy from sites that customize information to their location. AI-powered personalization is no longer optional—it's essential for survival in today's competitive landscape.</p>
+                        <p>500's AI Strategy Builder leverages machine learning to analyze your audience behavior and automatically adjust campaign parameters for maximum engagement and conversion rates.</p>
                         <div class="insight-stats">
                             <span class="stat-badge">63%</span>
                             <span class="stat-text">Higher conversion with location-based personalization</span>
@@ -89,10 +198,13 @@
                 </article>
                 
                 <article class="insight-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="insight-image"><i class="fas fa-users"></i></div>
+                    <div class="insight-image">
+                        <i class="fas fa-users"></i>
+                    </div>
                     <div class="insight-content">
                         <h3>User-Generated Content: The New Marketing Gold</h3>
-                        <p>Consumers trust peer recommendations 92% more than traditional advertising.</p>
+                        <p>Consumers trust peer recommendations 92% more than traditional advertising. User-generated content (UGC) campaigns are driving unprecedented engagement rates across social platforms.</p>
+                        <p>Our platform helps you identify, curate, and amplify authentic UGC that resonates with your target audience, turning customers into brand advocates.</p>
                         <div class="insight-stats">
                             <span class="stat-badge">92%</span>
                             <span class="stat-text">Trust peer recommendations over ads</span>
@@ -101,10 +213,13 @@
                 </article>
                 
                 <article class="insight-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="insight-image"><i class="fas fa-bullseye"></i></div>
+                    <div class="insight-image">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
                     <div class="insight-content">
                         <h3>Behavioral Segmentation: Beyond Demographics</h3>
-                        <p>Companies using behavioral data see 3x higher conversion rates than those using demographics alone.</p>
+                        <p>Traditional demographic targeting is giving way to behavioral segmentation. Companies using behavioral data see 3x higher conversion rates compared to demographic-only targeting.</p>
+                        <p>500's advanced analytics engine tracks user behavior patterns and automatically segments your audience for hyper-targeted campaigns that drive results.</p>
                         <div class="insight-stats">
                             <span class="stat-badge">3x</span>
                             <span class="stat-text">Higher conversion with behavioral targeting</span>
@@ -120,16 +235,18 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Trusted by Marketing Leaders</h2>
-                <p class="section-subtitle">See what industry experts say about Weaver</p>
+                <p class="section-subtitle">See what industry experts say about 500</p>
             </div>
             
             <div class="testimonials-carousel" id="testimonials-carousel">
                 <div class="testimonial-card active">
                     <div class="testimonial-content">
-                        <p>"Weaver transformed our marketing operations. AI insights helped us increase our conversion rate by 40% in just three months."</p>
+                        <p>"500 transformed our marketing operations. The AI insights helped us increase our conversion rate by 40% in just three months. It's like having a marketing expert on your team 24/7."</p>
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
                         <div class="author-info">
                             <h4>Sarah Chen</h4>
                             <span>CMO, TechFlow Inc.</span>
@@ -139,10 +256,12 @@
                 
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>"The real-time dashboard and automated optimization features have saved us countless hours."</p>
+                        <p>"The real-time dashboard and automated optimization features have saved us countless hours. 500's platform is intuitive, powerful, and delivers measurable ROI."</p>
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
                         <div class="author-info">
                             <h4>Marcus Rodriguez</h4>
                             <span>Marketing Director, GrowthCo</span>
@@ -152,10 +271,12 @@
                 
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>"As a startup, we needed enterprise-level marketing tools without the enterprise price tag. Weaver delivered exactly that."</p>
+                        <p>"As a startup, we needed enterprise-level marketing tools without the enterprise price tag. 500 delivered exactly that - sophisticated features with a simple interface."</p>
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
                         <div class="author-info">
                             <h4>Emily Watson</h4>
                             <span>Founder, StartupXYZ</span>
@@ -172,18 +293,136 @@
         </div>
     </section>
 
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Plan</h2>
+                <p class="section-subtitle">Start free, scale as you grow</p>
+            </div>
+            
+            <div class="pricing-toggle">
+                <span>Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="billing-toggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span>Yearly <span class="discount-badge">Save 20%</span></span>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="29" data-yearly="23">29</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Perfect for small teams getting started</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to 5 campaigns</li>
+                        <li><i class="fas fa-check"></i> Basic AI insights</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                        <li><i class="fas fa-check"></i> Standard analytics</li>
+                    </ul>
+                    <button class="cta-button secondary">Get Started</button>
+                </div>
+                
+                <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="100">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="99" data-yearly="79">99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For growing businesses that need more power</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited campaigns</li>
+                        <li><i class="fas fa-check"></i> Advanced AI strategy builder</li>
+                        <li><i class="fas fa-check"></i> Live dashboard</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> A/B testing tools</li>
+                        <li><i class="fas fa-check"></i> Payment integration</li>
+                    </ul>
+                    <a href="start-trial.html" class="cta-button primary">Start Free Trial</a>
+                </div>
+                
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="299" data-yearly="239">299</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For large organizations with custom needs</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Pro</li>
+                        <li><i class="fas fa-check"></i> Custom integrations</li>
+                        <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                        <li><i class="fas fa-check"></i> Advanced security</li>
+                        <li><i class="fas fa-check"></i> Custom reporting</li>
+                        <li><i class="fas fa-check"></i> API access</li>
+                    </ul>
+                    <button class="cta-button secondary">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
                     <h2>Ready to Transform Your Marketing?</h2>
-                    <p>Join thousands of marketers who are already using Weaver to scale their campaigns.</p>
+                    <p>Join thousands of marketers who are already using 500 to scale their campaigns and drive real results.</p>
                     <div class="contact-features">
-                        <div class="contact-feature"><i class="fas fa-rocket"></i><span>Start your free trial today</span></div>
-                        <div class="contact-feature"><i class="fas fa-clock"></i><span>No credit card required</span></div>
-                        <div class="contact-feature"><i class="fas fa-headset"></i><span>24/7 support available</span></div>
+                        <div class="contact-feature">
+                            <i class="fas fa-rocket"></i>
+                            <span>Start your free trial today</span>
+                        </div>
+                        <div class="contact-feature">
+                            <i class="fas fa-clock"></i>
+                            <span>No credit card required</span>
+                        </div>
+                        <div class="contact-feature">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 support available</span>
+                        </div>
                     </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="demo-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder="Company Name" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="plan" name="plan" required>
+                                <option value="">Select Plan</option>
+                                <option value="starter">Starter</option>
+                                <option value="pro">Pro</option>
+                                <option value="enterprise">Enterprise</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your marketing goals (optional)"></textarea>
+                        </div>
+                        <button type="submit" class="cta-button primary full-width">Start Free Trial</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -194,17 +433,58 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <div class="footer-logo">Weaver</div>
-                    <p>Marketing reinvented for the AI age. Empowering teams with data-first tools.</p>
+                    <div class="footer-logo">500</div>
+                    <p>Marketing reinvented for the AI age. Empowering teams to market like giants with data-first tools.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="api.html">API</a></li>
+                        <li><a href="integrations.html">Integrations</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="insights.html">Insights</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="gdpr.html">GDPR</a></li>
+                    </ul>
+                </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2024 Weaver. All rights reserved.</p>
+                <p>&copy; 2024 500. All rights reserved. Marketing reinvented for the AI age.</p>
             </div>
         </div>
     </footer>
@@ -212,4 +492,4 @@
     <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
