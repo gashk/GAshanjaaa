@@ -1,39 +1,146 @@
-body {
-    font-family: Arial, sans-serif;
+/* ---------- RESET & BASE STYLES ---------- */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
     line-height: 1.6;
 }
 
+/* ---------- HEADER ---------- */
 header {
-    background: #2a9d8f;
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
     color: white;
-    padding: 1rem;
+    padding: 1.5rem 2rem;
     text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav {
+    margin-top: 0.5rem;
 }
 
 nav a {
-    color: white;
-    margin: 0 10px;
+    color: #f1f1f1;
+    margin: 0 15px;
     text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #e9c46a;
+    transition: width 0.3s ease;
+    margin: auto;
+}
+
+nav a:hover {
+    color: #e9c46a;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ---------- SECTION CONTENT ---------- */
 section {
-    padding: 2rem;
+    padding: 3rem 8%;
+    max-width: 1100px;
+    margin: auto;
 }
 
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #264653;
+    font-weight: 600;
+}
+
+section p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+/* ---------- BLOG ARTICLES ---------- */
+article {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+article h2 {
+    font-size: 1.4rem;
+    color: #2a9d8f;
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- BUTTONS ---------- */
 .btn {
-    background: #e76f51;
+    background: linear-gradient(90deg, #e76f51, #f4a261);
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-decoration: none;
     display: inline-block;
-    margin-top: 10px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
+.btn:hover {
+    background: linear-gradient(90deg, #f4a261, #e76f51);
+    transform: scale(1.05);
+}
+
+/* ---------- FOOTER ---------- */
 footer {
     background: #264653;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    box-shadow: 0 -3px 8px rgba(0,0,0,0.2);
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 8px;
+        font-size: 0.95rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 2rem 5%;
+    }
 }
